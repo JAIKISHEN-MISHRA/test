@@ -1,5 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'boxicons/css/boxicons.css'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,6 +15,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <meta charSet="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+  <title>Restaurantly Bootstrap Template - Index</title>
+  <meta content="" name="description"/>
+  <meta content="" name="keywords"/>
+       {/* <!-- Favicons --> */}
+  <link href="node_modules/img/favicon.png" rel="icon"/>
+  
+
+  {/* <!-- Google Fonts --> */}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+   
+  </head>
+
+
       <body className={inter.className}>{children}</body>
     </html>
   )
